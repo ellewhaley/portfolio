@@ -1,7 +1,6 @@
 .about {
-  align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   height: 500px;
   padding: 0 15px 0;
 
@@ -17,5 +16,57 @@
   @media (min-width: 1440px) {
     height: 900px;
     padding: 0 60px 0;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+
+    @media (min-width: 768px) {
+      padding-bottom: 30px;
+    }
+
+    @media (min-width: 1024px) {
+      padding-bottom: 100px;
+    }
+  }
+
+  &__content {
+    align-self: center;
+    padding-bottom: 40px;
+
+    &__info {
+      display: none;
+
+      &--active {
+        display: block;
+      }
+    }
+  }
+
+  &__timeline {
+    @media (min-width: 1024px) {
+      border-top: 3px solid var(--color-light-green);
+      display: flex;
+      justify-content: space-between;
+      padding-top: 70px;
+    }
+
+    &__date {
+      @media (min-width: 1024px) {
+        transform: rotate(270deg);
+        white-space: nowrap;
+        transition: 0.5s;
+        color: var(--color-pink);
+      }
+
+      &:hover {
+        transform: rotate(0deg);
+      }
+
+      &--active {
+        transform: rotate(0deg);
+        color: var(--color-mustard);
+      }
+    }
   }
 }

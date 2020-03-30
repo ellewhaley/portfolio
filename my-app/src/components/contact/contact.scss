@@ -1,21 +1,78 @@
 .contact {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 500px;
-  padding: 0 15px 0;
+  padding: 100px 15px 100px;
 
   @media (min-width: 768px) {
-    height: 700px;
-    padding: 0 30px 0;
+    padding: 100px 50px 100px;
   }
 
   @media (min-width: 1024px) {
-    padding: 0 45px 0;
+    padding: 100px 75px 100px
   }
 
   @media (min-width: 1440px) {
-    height: 900px;
-    padding: 0 60px 0;
+    padding: 150px 100px 150px;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+
+    @media (min-width: 768px) {
+      padding-bottom: 30px;
+    }
+
+    @media (min-width: 1024px) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__var {
+    &--purple {
+      color: var(--color-purple);
+    }
+  }
+
+  button,
+  a {
+    font: bold 1rem/1.8rem "Courier New";
+    text-decoration: none;
+    transition: 0.5s;
+
+    @media (min-width: 768px) {
+      font-size: 1.2rem;
+      line-height: 2.1rem;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+    }
+
+    &:hover {
+      color: var(--color-mustard);
+      text-decoration: underline;
+    }
+  }
+
+  &__email,
+  &__tel,
+  &__git,
+  &__in {
+    padding-left: 20px;
+
+    @media (min-width: 768px) {
+      padding-left: 30px;
+    }
+
+    @media (min-width: 1024px) {
+      padding-left: 40px;
+    }
+
+    &--green {
+      color: var(--color-light-green);
+    }
+
+    &--pink {
+      color: var(--color-pink);
+    }
   }
 }

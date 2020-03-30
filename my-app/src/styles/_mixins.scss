@@ -5,13 +5,11 @@
   vertical-align: middle;
 
   &:hover {
-    .no-touch & {
-      text-decoration: none;
+    text-decoration: none;
 
-      &::after {
-        left: 0;
-        right: 0;
-      }
+    &::after {
+      left: 0;
+      right: 0;
     }
   }
 

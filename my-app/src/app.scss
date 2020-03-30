@@ -1,7 +1,7 @@
 .app {
   background: var(--color-white);
   color: var(--color-off-black);
-  transition: 1s;
+  transition: 0.5s;
   font-family: "Courier New";
   font-weight: bold;
 }
@@ -9,4 +9,14 @@
 .app--active {
   background: var(--color-off-black);
   color: var(--color-white);
+
+  .function {
+    border-bottom: var(--color-off-black);
+  }
+
+  .hero__title__about,
+  .hero__title__portfolio,
+  .hero__title__contact {
+    color: var(--color-white);
+  }
 }

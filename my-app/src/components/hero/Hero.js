@@ -14,10 +14,10 @@ const Hero = () => {
     <div className="hero" id="hero">
       <div className="hero__title">
         {count ? (
-          <Typist avgTypingDelay={80} cursor={{ blink: true }} onTypingDone={() => setCount(1)}>
+          <Typist avgTypingDelay={50} cursor={{ blink: true }} onTypingDone={() => setCount(1)}>
             <span className="hero__title__var">const </span> object = {`{`}<br/>
             <span className="hero__title__label">name: </span>
-            <span className="hero__title__name">'Elle Whaley'</span>,<br/>
+            <h1 className="hero__title__name">'Elle Whaley'</h1>,<br/>
             <span className="hero__title__label">type: </span>
             <span className="hero__title__type">'Developer'</span>,<br/>
             <span className="hero__title__label">location: </span>
@@ -33,9 +33,5 @@ const Hero = () => {
     </div>
   );
 }
-
-// <span className="hero__title-label">properties: [</span><br/><span className="hero__title-fact">'something interesting'</span>,<br/>
-// <span className="hero__title-fact">'something interesting'</span>,<br/>
-// <span className="hero__title-fact">'something interesting'</span><br/><span className="bracket">];</span><br/>
 
 export default Hero;
