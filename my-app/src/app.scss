@@ -1,0 +1,12 @@
+.app {
+  background: var(--color-white);
+  color: var(--color-off-black);
+  transition: 1s;
+  font-family: "Courier New";
+  font-weight: bold;
+}
+
+.app--active {
+  background: var(--color-off-black);
+  color: var(--color-white);
+}

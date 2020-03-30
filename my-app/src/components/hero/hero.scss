@@ -1,0 +1,125 @@
+@import '_mixins.scss';
+
+.hero {
+  align-items: center;
+  display: flex;
+  font: bold 1.2rem/2rem "Courier New";
+  justify-content: center;
+  padding: 100px 15px 100px;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    padding: 100px 30px 100px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    padding: 100px 45px 100px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    padding: 160px 60px 160px;
+  }
+
+  &__title {
+    margin: 0;
+    height: 280px;
+
+    @media (min-width: 768px) {
+      height: 340px
+    }
+
+    @media (min-width: 1024px) {
+      height: 440px;
+      width: 430px;
+    }
+
+    @media (min-width: 1440px) {
+      height: 480px;
+      width: 450px;
+    }
+
+    &__var {
+      color: var(--color-purple);
+    }
+
+    &__label {
+      color: var(--color-light-green);
+      padding-left: 30px;
+
+      @media (min-width: 768) {
+        padding-left: 40px;
+      }
+    }
+
+    &__name,
+    &__type,
+    &__location,
+    &__fact {
+      color: var(--color-pink);
+    }
+
+    &__about {
+      display: inline-block;
+      padding-top: 20px;
+
+      @media (min-width: 768px) {
+        padding-top: 30px;
+      }
+    }
+
+    &__about,
+    &__portfolio,
+    &__contact {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--color-off-black);
+
+      &-click {
+        display: none;
+      }
+
+      &:hover {
+        .function {
+          border-bottom: 2px solid var(--color-mustard);
+        }
+        .hero__title__contact-click,
+        .hero__title__portfolio-click,
+        .hero__title__about-click {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.function {
+  border-bottom: 2px solid var(--color-white);
+  color: var(--color-mustard);
+  transition: 0.5s;
+}
+
+.bracket {
+  padding-left: 30px;
+}
+
+.Typist .Cursor {
+  display: inline-block;
+}
+
+.Typist .Cursor--blinking {
+  opacity: 1;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+0% {
+  opacity: 1; }
+50% {
+  opacity: 0; }
+100% {
+  opacity: 1; } }

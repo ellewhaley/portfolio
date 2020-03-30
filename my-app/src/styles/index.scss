@@ -2,10 +2,13 @@
 @import '_colours.scss';
 @import '_fonts.scss';
 @import '_main.scss';
+@import '_mixins.scss';
 
 @import '../components/header/header.scss';
+@import '../components/hero/hero.scss';
 @import '../components/about/about.scss';
-@import '../components/timeline/timeline.scss';
 @import '../components/portfolio/portfolio.scss';
 @import '../components/contact/contact.scss';
 @import '../components/footer/footer.scss';
+
+@import '../app.scss';
