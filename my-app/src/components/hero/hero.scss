@@ -97,7 +97,7 @@
     &__contact {
       display: inline-block;
       text-decoration: none;
-      color: var(--color-off-black);
+      color: var(--color-white);
 
       &-click {
         display: none;
@@ -120,7 +120,7 @@
 }
 
 .function {
-  border-bottom: 2px solid var(--color-white);
+  border-bottom: 2px solid var(--color-off-black);
   color: var(--color-mustard);
   transition: 0.5s;
 }

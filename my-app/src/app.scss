@@ -1,22 +1,30 @@
 .app {
-  background: var(--color-white);
-  color: var(--color-off-black);
+  background: var(--color-off-black);
+  color: var(--color-white);
   transition: 0.5s;
-  font-family: "Courier New";
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
 }
 
 .app--active {
-  background: var(--color-off-black);
-  color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-off-black);
 
   .function {
-    border-bottom: var(--color-off-black);
+    border-bottom: var(--color-white);
+  }
+
+  .header {
+    background: var(--color-white);;
+  }
+
+  .header__nav-item {
+    color: var(--color-off-black)
   }
 
   .hero__title__about,
   .hero__title__portfolio,
   .hero__title__contact {
-    color: var(--color-white);
+    color: var(--color-off-black);
   }
 }

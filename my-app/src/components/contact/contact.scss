@@ -1,4 +1,5 @@
 .contact {
+  font-family: "Courier New";
   padding: 100px 15px 100px;
 
   @media (min-width: 768px) {
@@ -33,7 +34,7 @@
 
   button,
   a {
-    font: bold 1rem/1.8rem "Courier New";
+    font: normal 1rem/1.8rem "Courier New";
     text-decoration: none;
     transition: 0.5s;
 
